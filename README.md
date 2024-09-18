@@ -3,8 +3,8 @@ Repositório projeto bagunça
 
 ---------------------------
 # Contribuidores:
-. Douglas Araújo
-. Raphael Melo
-. Ruan Lobo
-. Talisson Leandro
-. Yan Basílio
+<p>. Douglas Araújo</p>
+<p>. Raphael Melo</p>
+<p>. Ruan Lobo</p>
+<p>. Talisson Leandro</p>
+<p>. Yan Basílio</p>
