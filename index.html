@@ -21,7 +21,7 @@
             </ul>
         </div>        
         
-        <!-- Modal de Login -->
+        <!-- modal de login -->
         <div id="loginModal" class="modal">
             <div class="modal-content">
                 <span class="close" id="closeLogin">&times;</span>
@@ -31,12 +31,26 @@
                     <input type="text" id="username" name="username" required><br><br>
                     <label for="password">Senha:</label>
                     <input type="password" id="password" name="password" required><br><br>
-                    <button type="submit">Entrar</button>
+                    <div class="checkbox-login">
+                        <input type="checkbox" id="confirm-remember"> 
+                        <p>Lembrar-me</p>
+                        <p style="margin-left: 15%;">Esqueceu a senha? <a href="#">Recuperar</a></p>
+                    </div>
+                    <button type="submit" class="btn-login">LOGIN</button>
+                    <div>
+                        <p>Ou login com:</p>
+                        <div class="social-login">
+                            <a href="#"><i class="fab fa-google"></i> Login com o Google</a>
+                            <a href="#"><i class="fab fa-facebook-f"></i> Login com o Facebook</a>
+                            <a href="#"><i class="fab fa-apple"></i> Login com a Apple</a>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px;">Ainda não possui uma conta? <a href="#" id="openRegister">Crie agora</a></p>
                 </form>
             </div>
         </div>
 
-        <!-- Modal de Cadastro -->
+        <!-- modal de cadastro -->
         <div id="registerModal" class="modal">
             <div class="modal-content">
                 <span class="close" id="closeRegister">&times;</span>
@@ -48,7 +62,13 @@
                     <input type="email" id="email" name="email" required><br><br>
                     <label for="passwordRegister">Senha:</label>
                     <input type="password" id="passwordRegister" name="password" required><br><br>
-                    <button type="submit">Cadastrar</button>
+                    <label for="passwordRegister">Confirmar Senha</label>
+                    <input type="password" id="passwordRegisterConfirm" name="passwordConfirm" required><br><br>
+                    <div class="checkbox-register"></div>
+                        <input type="checkbox" id="confirm-remember"> 
+                        <p>Li e concordo com os <strong>termos & condições</strong> e <strong>política de privacidade</strong>.</p>
+                    </div>
+                    <button type="submit" class="btn-login">CRIAR CONTA</button>
                 </form>
             </div>
         </div>
@@ -69,7 +89,7 @@
     </main>
     
     <footer>
-        <div class="container mx-auto py-16 ">
+        <div class="container mx-auto py-16">
             <div class="flex justify-between items-start">
                 <div class="w-1/4">
                     <div class="flex items-center mb-4">
@@ -83,7 +103,7 @@
                     </p>
                 </div>  
                 <div class="w-1/4 mx-10">
-                    <h2 class="text-lg font-bold mb-2">Sobre nos</h2>
+                    <h2 class="text-lg font-bold mb-2">Produtos</h2>
                     <ul class="text-sm">
                         <li>aaaaaaa</li>
                         <li>aaaaaaa</li>
@@ -100,6 +120,7 @@
                 <div class="w-1/4">
                     <h2 class="text-lg font-bold mb-2">Quem somos</h2>
                     <ul class="text-sm p-2">
+                        <li>aaaaaaa</li>
                         <li>aaaaaaa</li>
                         <li>aaaaaaa</li>
                         <li>aaaaaaa</li>
