@@ -3,41 +3,55 @@ var loginModal = document.getElementById("loginModal");
 var registerModal = document.getElementById("registerModal");
 
 // Obtém os links de Login e Cadastro
-var loginLink = document.querySelector('.header-home ul li a[href="#"]');
-var registerLink = document.querySelector('.header-home ul li:nth-child(2) a');
+var loginLink = document.getElementById("loginLink");
+var registerLink = document.getElementById("registerLink");
 
 // Obtém os botões de fechar (X)
 var closeLogin = document.getElementById("closeLogin");
 var closeRegister = document.getElementById("closeRegister");
 
-// Abre o modal de Login quando o link de Login é clicado
+// Função para abrir o modal com animação
+function openModal(modal) {
+    modal.style.display = "block";
+    modal.classList.add('modal-slide-in');
+}
+
+// Função para fechar o modal e remover a animação
+function closeModal(modal) {
+    modal.classList.remove('modal-slide-in');
+    setTimeout(function() {
+        modal.style.display = "none";
+    }, 300); // Tempo para a animação de saída
+}
+
+// Abre o modal de Login com animação
 loginLink.addEventListener('click', function(event) {
     event.preventDefault();
-    loginModal.style.display = "block";
+    openModal(loginModal);
 });
 
-// Abre o modal de Cadastro quando o link de Cadastro é clicado
+// Abre o modal de Cadastro com animação
 registerLink.addEventListener('click', function(event) {
     event.preventDefault();
-    registerModal.style.display = "block";
+    openModal(registerModal);
 });
 
-// Fecha o modal de Login quando o usuário clica no X
+// Fecha o modal de Login
 closeLogin.onclick = function() {
-    loginModal.style.display = "none";
+    closeModal(loginModal);
 }
 
-// Fecha o modal de Cadastro quando o usuário clica no X
+// Fecha o modal de Cadastro
 closeRegister.onclick = function() {
-    registerModal.style.display = "none";
+    closeModal(registerModal);
 }
 
-// Fecha os modais se o usuário clicar fora da modal
+// Fecha os modais ao clicar fora
 window.onclick = function(event) {
     if (event.target == loginModal) {
-        loginModal.style.display = "none";
+        closeModal(loginModal);
     }
     if (event.target == registerModal) {
-        registerModal.style.display = "none";
+        closeModal(registerModal);
     }
 }

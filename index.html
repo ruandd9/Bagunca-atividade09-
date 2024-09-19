@@ -9,34 +9,65 @@
     <title>inicial-page</title>
 </head>
 <body>
-  
     <header>
-            <div id="logo-header">
-                <img class="logo" src="./src/img/logo.svg" alt="logo">
-               
-            </div>
+        <div id="logo-header">
+            <img class="logo" src="./src/img/logo.svg" alt="logo">
+        </div>
 
-            <div class="header-home">
-                <ul>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Cadastro</a></li>
-                </ul>
+        <div class="header-home">
+            <ul>
+                <li><a href="#" id="loginLink">Login</a></li>
+                <li><a href="#" id="registerLink">Cadastro</a></li>
+            </ul>
+        </div>        
+        
+        <!-- Modal de Login -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeLogin">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <button type="submit">Entrar</button>
+                </form>
             </div>
+        </div>
 
+        <!-- Modal de Cadastro -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRegister">&times;</span>
+                <h2>Cadastro</h2>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="passwordRegister">Senha:</label>
+                    <input type="password" id="passwordRegister" name="password" required><br><br>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
     </header>
+
     <main>
         <div class="text-content-homepage">
             <div class="text-content-homepage-header">
                 <h2>ARRUME SUA VIDA COM</h2>
                 <h1>BAGUNÇA</h1>
             </div>
-            <P>
+            <p>
                 Organize suas tarefas e projetos de forma simples e eficiente. 
                 No Bagunça, ajudamos você a transformar o caos em ordem, facilitando o acompanhamento do seu progresso. 
                 Simplifique sua vida e alcance suas metas com nosso sistema de Kanban.
-            </P>
+            </p>
         </div>
     </main>
+    
     <footer>
         <div class="container mx-auto py-16 ">
             <div class="flex justify-between items-start">
@@ -77,7 +108,7 @@
                 </div>
             </div>
             <div class="mt-16 flex justify-center p-5">
-                <button class=" bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full flex items-center">
+                <button class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full flex items-center">
                     <i class="fas fa-project-diagram mr-2"></i>
                     PROJETO INTEGRADOR
                 </button>
@@ -85,5 +116,6 @@
         </div>
     </footer>
 
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
