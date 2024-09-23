@@ -63,87 +63,122 @@ header {
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
-    color: black;
-}
-
-.modal input[type="text"], input[type="password"], input[type="email"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: solid 2px darkgray;
-    border-radius: 10px;
-}
-
-.checkbox-login, .checkbox-register{
     display: flex;
-}
-
-.btn-login{
-    padding: 14px 20px;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease-out;
-    width: 100%;
-
-    &:hover{
-        background-color: rgb(10, 10, 10);
-    }
-}
-
-.social-login a, i{
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: black;
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto; /* centraliza a modal */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px; /* limita a largura máxima */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: 'Arial', sans-serif;
 }
 
-/* animação de descida */
-@keyframes slideDown {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.modal-content h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.modal-slide-in {
-    animation: slideDown 0.3s ease-out;
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.modal-content input[type="checkbox"] {
+    margin-right: 8px;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.modal-content .checkbox-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-content .btn-login {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.modal-content .btn-login:hover {
+    background-color: #555;
+}
+
+.modal-content .social-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.modal-content .social-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.modal-content .social-login a i {
+    margin-right: 8px;
+}
+
+.modal-content .social-login a:hover {
+    background-color: #eee;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.modal-content .close:hover {
+    color: #333;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-content p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.modal-content p a:hover {
+    text-decoration: underline;
 }

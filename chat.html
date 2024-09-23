@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Layout</title>
+    <link rel="stylesheet" href="./src/style/chat.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./src/img/logo.svg" alt="Logo">
+        </div>
+        <div class="menu">
+            <button>Quadros</button>
+            <button>Chats</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+    </aside>
+
+    <div class="container"> <!-- container com todo o conteúdo do site dividido em 3 partes-->
+        <section class="chat-list">
+            <div class="teams">
+                <div class="profile-teams">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Yan Fellippe">
+                    <h3>Yan Fellippe</h3>
+                    <span class="status">Ativo</span>
+                </div>
+                <h3>Teams</h3>
+                <div class="team-circles">
+                    <span class="team google">G</span>
+                    <span class="team upwork">U</span>
+                    <span class="team trello">T</span>
+                    <span class="team jira">J</span>
+                    <span class="team amazon">A</span>
+                </div>
+                <h3>Chats</h3>
+                <div class="chat-search">
+                    <input type="search" placeholder="Pesquisar">
+                    <button>Enviar</button>
+                </div>
+            </div>
+
+            <div class="chat-items">
+                <div class="chat-item">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Raphael Melo">
+                    <div class="chat-text">
+                        <strong>Raphael Melo</strong>
+                        <p>Vou hoje não, me sequestraram..</p>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Talisson Dourado">
+                    <div class="chat-text">
+                        <strong>Talisson Dourado</strong>
+                        <p>Irineu, você não sabe nem eu!</p>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Douglas Araújo">
+                    <div class="chat-text">
+                        <strong>Douglas Araújo</strong>
+                        <p>Eu sou o Douglas, você não é o Douglas!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-window">
+            <div class="chat-header">
+                <img src="./src/img/Cute-Cat.jpg" alt="Yan Fellippe">
+                <h3>Yan Fellippe</h3>
+                <span class="status">Ativo</span>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum accusamus nemo voluptatibus magnam, quos eaque cum quam, veniam quaerat eveniet sequi, animi libero nulla at totam ea minima labore debitis?</p>
+                </div>
+                <div class="message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere veritatis repellat in voluptates laborum rerum, cupiditate molestiae odit cumque assumenda ducimus consequatur iusto corporis ipsa officiis modi adipisci dolor!</p>
+                    <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
+                </div>
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Mensagem">
+                <button>Enviar</button>
+            </div>
+        </section>
+
+        <section class="user-info">
+            <div class="friend-profile">
+                <img class="img-friend-profile" src="./src/img/Cute-Cat.jpg" alt="Rafael">
+                <h3>Rafael Bomfim</h3>
+                <span class="status">Ativo</span>
+            </div>
+            <div class="boards">
+                <div class="board">
+                    <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java">
+                    <span>Projeto Java</span>
+                </div>
+                <div class="board">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8cA9w2prOIwT_JvDz1AhRSKGP0Osj6oQHA&s" alt="Integrador">
+                    <span>Projeto Integrador</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

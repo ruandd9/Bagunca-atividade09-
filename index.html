@@ -27,25 +27,30 @@
                 <span class="close" id="closeLogin">&times;</span>
                 <h2>Login</h2>
                 <form>
-                    <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="johnsondoe@nomail.com" required>
+                    
                     <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="password" id="password" name="password" placeholder="************" required>
+                    
                     <div class="checkbox-login">
-                        <input type="checkbox" id="confirm-remember"> 
-                        <p>Lembrar-me</p>
-                        <p style="margin-left: 15%;">Esqueceu a senha? <a href="#">Recuperar</a></p>
-                    </div>
-                    <button type="submit" class="btn-login">LOGIN</button>
-                    <div>
-                        <p>Ou login com:</p>
-                        <div class="social-login">
-                            <a href="#"><i class="fab fa-google"></i> Login com o Google</a>
-                            <a href="#"><i class="fab fa-facebook-f"></i> Login com o Facebook</a>
-                            <a href="#"><i class="fab fa-apple"></i> Login com a Apple</a>
+                        <div>
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Lembrar-me</label>
                         </div>
+                        <a href="#">Esqueceu sua senha?</a>
                     </div>
-                    <p style="margin-top: 20px;">Ainda não possui uma conta? <a href="#" id="openRegister">Crie agora</a></p>
+                    
+                    <button type="submit" class="btn-login">LOGIN</button>
+                    
+                    <div class="social-login">
+                        <p>Ou login com:</p>
+                        <a href="#"><i class="fab fa-google"></i> Login com o Google</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Login com o Facebook</a>
+                        <a href="#"><i class="fab fa-apple"></i> Login com a Apple</a>
+                    </div>
+                    
+                    <p>Novo Usuário? <a href="#" id="openRegister">CRIAR CONTA</a></p>
                 </form>
             </div>
         </div>
@@ -56,19 +61,33 @@
                 <span class="close" id="closeRegister">&times;</span>
                 <h2>Cadastro</h2>
                 <form>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required><br><br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="passwordRegister">Senha:</label>
-                    <input type="password" id="passwordRegister" name="password" required><br><br>
-                    <label for="passwordRegister">Confirmar Senha</label>
-                    <input type="password" id="passwordRegisterConfirm" name="passwordConfirm" required><br><br>
-                    <div class="checkbox-register"></div>
-                        <input type="checkbox" id="confirm-remember"> 
-                        <p>Li e concordo com os <strong>termos & condições</strong> e <strong>política de privacidade</strong>.</p>
+                    <input type="email" id="email" name="email" placeholder="johnsondoe@nomail.com" required>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    
+                    <label for="passwordRegister">Criar Senha:</label>
+                    <input type="password" id="passwordRegister" name="password" placeholder="************" required>
+                    
+                    <label for="passwordRegisterConfirm">Confirmar Senha:</label>
+                    <input type="password" id="passwordRegisterConfirm" name="passwordConfirm" placeholder="************" required>
+        
+                    <div class="checkbox-register">
+                        <input type="checkbox" id="confirm-terms" required> 
+                        <label for="confirm-terms">Eu concordo com os <a href="#">termos & condições</a> e a <a href="#">política de privacidade</a>.</label>
                     </div>
-                    <button type="submit" class="btn-login">CRIAR CONTA</button>
+        
+                    <button type="submit" class="btn-register">CRIAR CONTA</button>
+                    
+                    <div class="social-login">
+                        <p>OU</p>
+                        <a href="#"><i class="fab fa-google"></i> Login com o Google</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Login com o Facebook</a>
+                        <a href="#"><i class="fab fa-apple"></i> Login com a Apple</a>
+                    </div>
+                    
+                    <p>Já tem uma conta? <a href="#" id="openLogin">FAZER LOGIN</a></p>
                 </form>
             </div>
         </div>
