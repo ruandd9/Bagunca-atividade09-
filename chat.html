@@ -31,13 +31,18 @@
     <div class="container"> <!-- container com todo o conteúdo do site dividido em 3 partes-->
         <section class="chat-list">
             <div class="teams">
+                <div class="btn"> <!-- botão de return -->
+                    <button class="btn-return-function">
+                        <img class="btn-return" src="./src/img/Vector-btn-return.svg" alt="btn-return">
+                    </button>
+                </div>
                 <div class="profile-teams">
                     <img src="./src/img/Cute-Cat.jpg" alt="Yan Fellippe">
                     <h3>Yan Fellippe</h3>
                     <span class="status">Ativo</span>
                 </div>
                 <h3>Teams</h3>
-                <div class="team-circles">
+                <div class="team-circles"> <!-- grupos que o perfil está atrelado -->
                     <span class="team google">G</span>
                     <span class="team upwork">U</span>
                     <span class="team trello">T</span>
@@ -73,16 +78,50 @@
                         <p>Eu sou o Douglas, você não é o Douglas!</p>
                     </div>
                 </div>
+                <div class="chat-item">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Ruan Lobo">
+                    <div class="chat-text">
+                        <strong>Ruan Lobo</strong>
+                        <p>Mim dê papai! Auuuuuuuuuuu 🎵🎵 Baby I'm preying on you tonight... </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="chat-window">
-            <div class="chat-header">
-                <img src="./src/img/Cute-Cat.jpg" alt="Yan Fellippe">
-                <h3>Yan Fellippe</h3>
-                <span class="status">Ativo</span>
+        <section class="chat-window"> <!-- campo do chat com amigo ou equipe... -->
+            <div class="container-chat-people">
+                <div class="chat-header">
+                    <div class="chat-header-name">
+                        <img src="./src/img/Cute-Cat.jpg" alt="Rafael Bomfim">
+                        <h3>Rafael Bomfim</h3>
+                    </div>
+                    <div class="chat-header-status">
+                        <span class="status">Ativo</span>
+                    </div>
+                    
+                </div>
+                <div class="btn-chat"> <!-- botão de return e detalhes -->
+                    <button class="btn-return-function">
+                        <img class="btn-return" src="./src/img/Vector-btn-return.svg" alt="btn-return">
+                    </button>
+                    <button class="btn-details-function">
+                        <img class="btn-details" src="./src/img/Vector-details.svg" alt="btn-details">
+                    </button>    
+                </div>
             </div>
-            <div class="messages">
+            <div class="messages"> <!-- chat de mensagens -->
+                <div class="message">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum accusamus nemo voluptatibus magnam, quos eaque cum quam, veniam quaerat eveniet sequi, animi libero nulla at totam ea minima labore debitis?</p>
+                </div>
+                <div class="message">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere veritatis repellat in voluptates laborum rerum, cupiditate molestiae odit cumque assumenda ducimus consequatur iusto corporis ipsa officiis modi adipisci dolor!</p>
+                    <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
+                </div>
+                <div class="message">
+                    <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum accusamus nemo voluptatibus magnam, quos eaque cum quam, veniam quaerat eveniet sequi, animi libero nulla at totam ea minima labore debitis?</p>
+                </div>
                 <div class="message">
                     <img src="./src/img/Cute-Cat.jpg" alt="Mensagem">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum accusamus nemo voluptatibus magnam, quos eaque cum quam, veniam quaerat eveniet sequi, animi libero nulla at totam ea minima labore debitis?</p>
@@ -104,16 +143,29 @@
                 <h3>Rafael Bomfim</h3>
                 <span class="status">Ativo</span>
             </div>
-            <div class="boards">
+            <div class="boards"> 
                 <div class="board">
-                    <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java">
-                    <span>Projeto Java</span>
+                    <img src="https://appmaster.io/api/_files/hRaLG2N4DVjRZJQzCpN2zJ/download/" alt="Java">
+                    <span class="left-span">Projeto Java</span> <!-- Span esquerdo -->
+                    <span class="right-span">
+                        <img class="favorite" src="./src/img/golden-star.svg" alt="favorite">
+                    </span> <!-- Span direito -->
                 </div>
                 <div class="board">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8cA9w2prOIwT_JvDz1AhRSKGP0Osj6oQHA&s" alt="Integrador">
-                    <span>Projeto Integrador</span>
+                    <span class="left-span">Projeto Integrador</span> <!-- Span esquerdo -->
+                    <span class="right-span">
+                        <img class="favorite" src="./src/img/star.svg" alt="favorite">
+                    </span> <!-- Span direito -->
                 </div>
-            </div>
+                <div class="board">
+                    <img src="https://static.imasters.com.br/wp-content/uploads/2018/06/22153245/php-post-1.png" alt="PHP">
+                    <span class="left-span">Projeto PHP</span> <!-- Span esquerdo -->
+                    <span class="right-span">
+                        <img class="favorite" src="./src/img/golden-star.svg" alt="favorite">
+                    </span> <!-- Span direito -->
+                </div>
+            </div>                        
         </section>
     </div>
 </body>

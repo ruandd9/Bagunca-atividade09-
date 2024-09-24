@@ -83,6 +83,53 @@ header .search input {
     margin-bottom: 20px;
 }
 
+.btn-return-function {
+    margin-right: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-details-function {
+    margin-right: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-details {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.btn-return {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.btn-chat {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
 .profile-teams {
     text-align: center;
 }
@@ -167,20 +214,42 @@ header .search input {
     padding: 20px;
 }
 
+.container-chat-people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-chat-people button {
+    width: 35px;
+    height: 35px;
+}
+
 .chat-header {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.chat-header-name {
+    display: flex;
+}
+
+.chat-header-status{
+    display: flex;
+    margin-left: -150px;
 }
 
 .chat-header img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 .chat-header h3 {
     margin-right: 10px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .status {
@@ -207,7 +276,8 @@ header .search input {
 
 .message-input {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40%;
+    
 }
 
 .message-input input {
@@ -246,21 +316,43 @@ header .search input {
     text-align: center;
 }
 
-.boards {
+.boards { 
     margin-top: 20px;
+    border: 2px dashed #4d4d4d; /* borda tracejada */
+    border-radius: 5px;
 }
 
 .board {
+    position: relative; /* para os spans serem posicionados em relação à div */
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .board img {
-    width: 40px;
-    margin-right: 10px;
+    width: 100%; /* Torna a imagem responsiva */
+    height: auto; 
+    max-width: 249px; 
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .board span {
-    color: #ccc;
+    position: absolute; /* permite posicionamento absoluto */
+    top: 10px; /* distância do topo */
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+.board .left-span {
+    left: 10px; /* distância da esquerda para o canto superior esquerdo */
+}
+
+.board .right-span {
+    right: 10px; /* distância da direita para o canto superior direito */
 }
