@@ -199,10 +199,26 @@ header .search input {
     margin-right: 10px;
 }
 
+.message {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
 .message p{
+    padding: 10px;
+    margin: 3px;
     background-color: rgb(55, 56, 56);
     color: white;
     border-radius: 5px;
+}
+
+.message img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .chat-text p {
@@ -301,6 +317,9 @@ header .search input {
 .user-info {
     background-color: #2a2a2a;
     padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .friend-profile {
@@ -316,43 +335,55 @@ header .search input {
     text-align: center;
 }
 
+.text-borders-with {
+    display: flex;
+    text-align: center;
+}
+
 .boards { 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: 2px dashed #4d4d4d; /* borda tracejada */
     border-radius: 5px;
+    
 }
 
 .board {
     position: relative; /* para os spans serem posicionados em relação à div */
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
     margin-top: 10px;
     margin-left: 10px;
+    max-width: 265px;
 }
 
 .board img {
-    width: 100%; /* Torna a imagem responsiva */
+    width: 100%; /* deixa a imagem responsiva */
     height: auto; 
     max-width: 249px; 
     cursor: pointer;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .board span {
     position: absolute; /* permite posicionamento absoluto */
-    top: 10px; /* distância do topo */
-    color: #fff; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    top: 10px; /* distância do topo */ 
     padding: 5px; 
     border-radius: 5px; 
 }
 
 .board .left-span {
     left: 10px; /* distância da esquerda para o canto superior esquerdo */
+    color: #000000; 
+    background-color: rgba(255, 255, 255, 0.836);
 }
 
 .board .right-span {
     right: 10px; /* distância da direita para o canto superior direito */
+    top: 3px;
 }
