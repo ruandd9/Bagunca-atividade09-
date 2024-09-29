@@ -1,0 +1,185 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/principal-home.css">
+
+
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-800 p-4">
+            <div class="flex items-center mb-8">
+                <div class="p-2 rounded">
+                    <img src="logo-bagunca.svg" alt="">
+                </div>
+            </div>
+            <nav class="space-y-4">
+                <a href="./Quadros.html" class="flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-columns mr-3"></i>
+                    Quadros
+                </a>
+                <a href="./perfil1.html" class="flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-cog mr-3"></i>
+                    Configurações
+                </a>
+                <a href="#" class="flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-calendar-alt mr-3"></i>
+                    Calendario
+                </a>
+                <a href="./perfil1.html" class="flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-bell mr-3"></i>
+                    Notificações
+                </a>
+                <a href="./sobreNos.html" class="flex items-center text-gray-400 hover:text-white">
+                    <i class="fas fa-info-circle mr-3"></i>
+                    Informações
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-11 ">
+            <!-- Header -->
+            <header class=" py-2 mb-5">
+
+                <div class="flex justify-between items-center mb-6 ">
+                    <div class="flex items-center space-x-11">
+                        <div class="nav-dropdown relative">
+                            <a href="#" class="text-white text-lg flex items-center space-x-2">
+                                <i class="fas fa-columns"></i>
+                                <span>Quadros</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="nav-dropdown-content">
+                                <h3 class="text-lg mb-2">Workspaces</h3>
+                                <a href="#">Workspace 1</a>
+                                <a href="#">Workspace 2</a>
+                                <a href="#">Workspace 3</a>
+                                <hr class="my-2">
+                                <a href="#">Criar nova Workspace</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown relative">
+                            <a href="#" class="text-white text-lg flex items-center space-x-2">
+                                <i class="fas fa-comments"></i>
+                                <span>Chats</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="nav-dropdown-content">
+                                <h3 class="text-lg mb-2">Chats</h3>
+                                <a href="#">Chat 1</a>
+                                <a href="#">Chat 2</a>
+                                <a href="#">Chat 3</a>
+                                <hr class="my-2">
+                                <a href="#">Criar novo chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 relative">
+                        <input type="text" placeholder="Search" class="bg-white text-black px-4 py-1 rounded-full w-96">
+                        <div class="dropdown">
+                            <div class="bg-blue-500 text-white p-2 rounded-full cursor-pointer">AF</div>
+                            <div class="dropdown-content">
+                                <h3 class="text-lg mb-2">Profile</h3>
+                                <a href="./perfil1.html">View Profile</a>
+                                <a href="./perfil1.html">Settings</a>
+                                <a href="./sobreNos.html">Help</a>
+                                <hr class="my-2">
+                                <a href="../index.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <hr class="mb-10">
+            <!-- Create and Add Members -->
+            <div class="flex space-x-4 mt-8 mb-11 pb-11">
+                <button class="bg-gray-700 border border-white px-8 py-11 w-96 rounded flex items-center space-x-2">
+                    <span>Criar novo quadro</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="px-5">
+                    <button class="bg-gray-700 text-white px-8 py-3 rounded flex items-center space-x-2">
+                        <span>Adicionar Membros</span>
+                        <i class="fas fa-user-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Boards Section -->
+
+            <div class="my-11">
+                <h2 class="text-xl mb-4 mt-11">Meus quadros</h2>
+                <div class="flex items-center space-x-4 mb-4">
+                    <span class="border border-gray-700 text-white px-4 py-2 rounded">Bagunças</span>
+                    <i class="fas fa-star text-gray-400"></i>
+                    <i class="fas fa-user-friends text-gray-400"></i>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded flex items-center space-x-2">
+                        <i class="fas fa-columns"></i>
+                        <span>Quadros</span>
+                    </button>
+                    <i class="fas fa-chevron-down text-gray-400"></i>
+                </div>
+                <div class="flex space-x-11 mb-8 mt-11">
+                    <div class="bg-gray-800 p-11 border border-white rounded w-96">
+                        <h3 class="text-lg mb-4">Para fazer</h3>
+                        <div class="bg-gray-700  p-2 rounded mb-4">AAAAAAAAAAAAAAAA</div>
+                        <button class="bg-gray-400 text-white px-4 py-2 rounded w-full"> <a href="./Quadros.html">+ Add a card</a></button>
+
+                    </div>
+                    <div class="bg-gray-800 p-11 border border-white rounded w-96">
+                        <h3 class="text-lg mb-4">Fazendo</h3>
+                        <div class="bg-gray-700 p-2 rounded mb-4">AAAAAAAAAAAAAAAA</div>
+                        <button class="bg-gray-400 text-white px-4 py-2 rounded w-full"><a href="./Quadros.html">+ Add a card</a></button>
+
+                    </div>
+                    <div class="bg-gray-800 p-11 border border-white rounded w-96">
+                        <h3 class="text-lg mb-4">Concluido</h3>
+                        <div class="bg-gray-700 p-2 rounded mb-4">AAAAAAAAAAAAAAAA</div>
+                        <button class="bg-gray-400 text-white px-4 py-2 rounded w-full"><a href="./Quadros.html">+ Add a card</a></button>
+                    </div>
+                </div>
+                <button class="bg-gray-700 text-white px-4 py-2 rounded "><a href="./Quadros.html">+ Add another list</a></button>
+            </div>
+
+            <hr class="mb-8"> <!-- Popular Templates -->
+
+            <div class="py-6 mt-11">
+                <h2 class="text-xl mb-4">Popular templates</h2>
+                <div class=" flex items-center space-x-6 mb-4 mt-11">
+                    <span class="border border-gray-700 text-white px-4 py-2 rounded">Comece.....</span>
+                    <i class="fas fa-star text-gray-400"></i>
+                    <i class="fas fa-user-friends text-gray-400"></i>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded flex items-center space-x-2">
+                        <i class="fas fa-columns"></i>
+                        <span>Escolha sua categoria</span>
+                    </button>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class=" flex space-x-11 mt-11">
+                    <div class="card-popular-templates background-templates-1  p-4 rounded w-96">
+                        <h3 class="text-lg mb-4">Estudante</h3>
+                        <p>Project Management</p>
+                    </div>
+                    <div class="card-popular-templates background-templates-2 bg-gray-700 p-4 rounded w-96">
+                        <h3 class="text-lg mb-4">Devs</h3>
+                        <p>Kanban Template</p>
+                    </div>
+                    <div class="card-popular-templates background-templates-3 bg-gray-700 p-4 rounded w-96">
+                        <h3 class="text-lg mb-4">Simple Project Board</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
