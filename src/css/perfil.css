@@ -1,0 +1,44 @@
+
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.edit-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.profile-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.profile-info {
+    margin-top: 10px;
+}
+.form-container {
+    max-width: 400px;
+    margin: 30px auto;
+}
+.form-label {
+    font-weight: bold;
+}
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+.input-group-text {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ced4da;
+}
+.input-group .form-control {
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+}
