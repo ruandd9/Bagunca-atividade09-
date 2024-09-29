@@ -1,58 +1,61 @@
-# Bagunça - PI
+# Bagunça - Projeto Integrador (PI)
 
-## Repositório do Projeto Bagunça
+### Bem-vindo ao repositório do Bagunça
 
-Bem-vindo ao repositório do projeto **Bagunça**, um website inovador para organização pessoal. Este projeto foi desenvolvido como parte do Projeto Integrador (PI) do SENAC-DF.
-
----
-
-## Descrição do Projeto
-
-O **Bagunça** foi projetado para ajudar os usuários a gerenciar suas tarefas e projetos de forma eficiente, utilizando metodologias ágeis como **Scrum** e **Kanban**. Inspirado em ferramentas como Trello, o Bagunça oferece uma interface intuitiva para a organização de atividades, permitindo que os usuários:
-
-- Criem, editem e excluam tarefas.
-- Organize tarefas em listas personalizadas.
-- Acompanhem o progresso de projetos de maneira visual.
+O **Bagunça** é um website inovador voltado para **organização pessoal e gestão de tarefas**. Desenvolvido como parte do **Projeto Integrador (PI)** do SENAC-DF, ele utiliza as melhores práticas de metodologias ágeis como **Scrum** e **Kanban** para otimizar a produtividade dos usuários.
 
 ---
 
-## Tecnologias Utilizadas
+## 🎯 **Objetivo do Projeto**
 
-- **HTML5** e **CSS3** para estrutura e estilo da página.
-- **JavaScript** para interatividade.
-- **Tailwind CSS** para estilização responsiva.
-- **Font Awesome** para ícones.
+O objetivo do Bagunça é fornecer uma plataforma intuitiva e eficiente para quem precisa organizar suas tarefas e projetos pessoais ou profissionais de maneira clara e visual. Inspirado em ferramentas como **Trello**, o Bagunça facilita o gerenciamento de atividades, oferecendo recursos que permitem:
 
----
-
-## Contribuidores
-
-Agradecemos a colaboração dos seguintes membros da equipe:
-
-- Douglas Araújo
-- Raphael Melo
-- Ruan Lobo
-- Talisson Leandro
-- Yan Basílio
+- **Criar, editar e excluir tarefas** de maneira rápida e simples.
+- **Organizar tarefas** em **listas personalizadas** de acordo com suas prioridades e prazos.
+- **Visualizar o progresso** de cada projeto através de quadros que representam o status de cada tarefa.
 
 ---
 
-## Como Contribuir
+## 🚀 **Funcionalidades Principais**
 
-Se você gostaria de contribuir para o projeto, siga os passos abaixo:
+- **Gestão de Tarefas:** Crie, edite e exclua tarefas com facilidade.
+- **Listas Personalizadas:** Agrupe tarefas por projeto, etapa ou qualquer critério que faça sentido para você.
+- **Interface Visual Intuitiva:** Acompanhe o status das suas atividades com um design minimalista e eficiente.
+- **Progress Tracking:** Use quadros Kanban para acompanhar o progresso de cada projeto em tempo real.
+- **Suporte a Metodologias Ágeis:** Planeje sprints e organize suas tarefas de acordo com as práticas de Scrum e Kanban.
+- **Responsividade:** Interface adaptada para dispositivos móveis, proporcionando uma experiência fluida em qualquer tela.
+  
+---
 
-1. Faça um fork deste repositório.
-2. Crie uma nova branch para suas alterações: `git checkout -b minha-contribuicao`.
-3. Realize suas alterações e faça commit: `git commit -m 'Adicionando minha contribuição'`.
-4. Envie para o repositório remoto: `git push origin minha-contribuicao`.
-5. Abra um Pull Request para revisão.
+## 🛠️ **Tecnologias Utilizadas**
+
+O projeto foi desenvolvido com as seguintes tecnologias:
+
+- **HTML5** e **CSS3**: Estrutura e estilo da página.
+- **JavaScript**: Lógica para interatividade e manipulação dinâmica da interface.
+- **Tailwind CSS**: Framework de estilização para responsividade e design moderno.
+- **Font Awesome**: Biblioteca de ícones para melhorar a usabilidade e a visualização.
+- **Metodologias Ágeis**: Implementação de Scrum e Kanban para organização de tarefas.
 
 ---
 
-## Contato
+## 🧑‍💻 **Contribuidores**
 
-Para dúvidas ou sugestões, entre em contato pelo e-mail [seuemail@example.com](mailto:seuemail@example.com).
+A equipe responsável pelo desenvolvimento deste projeto é composta por:
+
+- **Douglas Araújo**
+- **Raphael Melo**
+- **Ruan Lobo**
+- **Talisson Leandro**
+- **Yan Basílio**
 
 ---
 
-Obrigado por visitar o repositório do **Bagunça**! Junte-se a nós na construção de uma ferramenta útil para organização pessoal!
+## 🤝 **Como Contribuir**
+
+Estamos abertos à colaboração da comunidade! Se você deseja contribuir para o projeto, siga os passos abaixo:
+
+1. Faça um **fork** deste repositório.
+2. Crie uma nova branch para suas alterações:
+   ```bash
+   git checkout -b minha-contribuicao
