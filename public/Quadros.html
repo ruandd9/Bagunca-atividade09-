@@ -356,5 +356,42 @@
     </main>
 
 </body>
+<script crossorigin="anonymous" integrity="sha384-oBqDVmMz4fnFO9gybBogGzA1U5K4l1z3fl4Kp3aZ91Je5zYd5i6gbF6P1fQp5hZu"
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-pprn3073KE6tl6jvKK1G+0U5Kp3p1pXtk1s7e6+D/n9pJo+Kld/5l5L7L4h/2+GI"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dropdowns = document.querySelectorAll('.dropdown-toggle');
+      dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+          event.preventDefault();
+          var menu = this.nextElementSibling;
+          if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+          } else {
+            document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+              menu.classList.remove('show');
+            });
+            menu.classList.add('show');
+          }
+        });
+      });
 
+      document.addEventListener('click', function (event) {
+        if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown-menu')) {
+          document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+            menu.classList.remove('show');
+          });
+        }
+      });
+
+      document.querySelectorAll('.sidebar a').forEach(link => {
+        link.addEventListener('click', function () {
+          document.querySelectorAll('.sidebar a').forEach(item => item.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
 </html>
