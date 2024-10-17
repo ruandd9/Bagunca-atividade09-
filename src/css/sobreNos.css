@@ -1,0 +1,23 @@
+/* conteudo do site */
+
+.logo-bagunca {
+    margin-bottom: 420px;
+}
+
+.about-us{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.about-img img {
+    width: 800px;
+    height: 400px;
+    border-radius: 2px;
+}
+
+.group-persons {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}

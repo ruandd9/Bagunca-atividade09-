@@ -1,0 +1,110 @@
+.navbar {
+    background-color: #333;
+    padding: 0.9rem 7rem;
+    width: 100%;
+  }
+
+  .form-control {
+    border-radius: 20px;
+  }
+
+  .btn-create {
+    background-color: #00c0ff;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .dropdown-menu {
+    min-width: 250px;
+  }
+
+  .dropdown-header {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-item i {
+    margin-right: 10px;
+  }
+
+  .avatar-header {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 35px;
+  }
+
+  .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+
+  .logo-bagunca {
+    margin-top: -300px;
+    height: 55px;
+    width: 55px;
+  }
+
+  .sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sidebar p {
+    overflow: hidden;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 75%;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .sidebar a .icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .sidebar a.active {
+    background-color: #cce6ff;
+    color: #333;
+  }
+
+  .sidebar a.active .icon {
+    color: #333;
+  }
+
+  .sidebar a:hover {
+    background-color: #cce6ff;
+    color: #333;
+    transform: scale(0.95);
+  }
+
+  .header {
+    flex-grow: 1;
+    margin-left: 80px;
+
+  }

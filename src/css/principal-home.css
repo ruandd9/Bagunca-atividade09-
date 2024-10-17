@@ -1,0 +1,75 @@
+hr {
+  color: cadetblue !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1f2937;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 16px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f2937;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 16px;
+}
+
+.nav-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+.card-popular-templates {
+  padding: 50px;
+  border-radius: 3%;
+}
+
+.background-templates-1 {
+  background-image: url('https://i.pinimg.com/736x/d3/ed/41/d3ed4130656d1cde69dcced62dd7b19c.jpg');
+
+}
+
+.background-templates-2 {
+  background-image: url('https://i.pinimg.com/564x/1f/30/d0/1f30d0ee2c8555e2a9113e7ea1882798.jpg');
+
+}
+
+.background-templates-3 {
+  background-image: url('https://i.pinimg.com/236x/89/6e/3f/896e3f288913600fd884c458fa535a93.jpg');
+
+
+}

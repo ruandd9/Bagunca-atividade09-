@@ -13,22 +13,23 @@ var closeRegister = document.getElementById("closeRegister");
 //modal com animação
 function openModal(modal) {
     modal.style.display = "block";
-    modal.classList.add('modal-slide-in');
+    // modal.classList.add('modal-slide-in');
 }
 
-//fechar o modal e remover a animação
 function closeModal(modal) {
-    modal.classList.remove('modal-slide-in');
+    // modal.classList.remove('modal-slide-in');
     setTimeout(function() {
         modal.style.display = "none";
-    }, 300); //timer da animação de saída
+    }, 300);
 }
 
 //modal de Login com animação
 loginLink.addEventListener('click', function(event) {
     event.preventDefault();
     openModal(loginModal);
-});
+    console.log(loginModal.style.display); // Verifique se é "none" ou "block"
+    console.log(loginModal.style.visibility); // Verifique se é "hidden" ou "visible"
+  });
 
 //modal de Cadastro com animação
 registerLink.addEventListener('click', function(event) {

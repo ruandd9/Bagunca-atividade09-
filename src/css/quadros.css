@@ -1,0 +1,273 @@
+#tema {
+    background-color: #313032;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    margin-top: 300px;
+}
+
+#titulo {
+    display: block;
+    height: 200px;
+    width: 100%;
+    margin-right: 0px;
+    padding-top: 100px;
+    color: black;
+    background-color: white;
+}
+
+#titulo a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--body-font);
+}
+
+#compartilha {
+    border-radius: 10px;
+    border: none;
+    background-color: #0085FF;
+    color: white;
+    height: 35px;
+    width: 133px;
+    justify-content: center;
+}
+
+#titulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 1300px;
+    margin-top: -40px;
+    background-color: white;
+}
+
+#titulo2 h1 {
+    margin-left: 50px;
+    padding-left: 100px;
+}
+
+#titulo2 button {
+    border: none;
+    background-color: white;
+}
+
+#public {
+    margin-top: 5px;
+    opacity: 30%;
+
+}
+
+.barra {
+    font-size: 30px;
+    opacity: 30%;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 350px);
+    border: none;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 250px;
+    position: fixed;
+}
+
+.card {
+    background-color: #FFF4F4 !important;
+    border: none;
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    height: 310px;
+    margin-top: 20px;
+}
+
+.new_card {
+    border-style: dashed;
+    border-color: #00000056;
+    border-radius: 20px;
+    height: 310px;
+    width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.resulmo {
+    font-size: 12px;
+    display: flex;
+    color: #0000008f;
+    align-items: center;
+    background-color: #FFF4F4;
+}
+
+.participantes {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border: none;
+
+    background-color: #FFF4F4;
+}
+
+.interaçoes {
+    background-color: #FFF4F4;
+    display: flex;
+    height: 15px;
+    width: 258px;
+    border: none;
+
+}
+
+.interaçoes button {
+    border: none;
+    background-color: #FFF4F4;
+
+}
+
+.pessoas {
+
+    margin-left: -10px;
+    height: 40px;
+    width: 40px;
+
+    background-color: #FFF4F4;
+    border-radius: 100px;
+
+}
+
+.arquivos {
+    display: flex;
+    height: 30px;
+    margin-left: 154px;
+    width: 200px;
+    background-color: #0085FF;
+
+
+}
+
+.arquivos img {
+    height: 20px;
+    width: 20px;
+}
+
+.new_card p {
+    margin-top: 100px;
+
+}
+
+.status {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(1, 10px);
+    align-items: center;
+    font-size: 15px;
+    color: BLACK;
+    margin-left: 125px;
+
+}
+
+#fazer {
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    padding-left: 10px;
+    background-color: #FFF4F4;
+    justify-content: space-around;
+}
+
+#fazendo {
+    margin-left: 25px;
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    padding-left: 10px;
+    background-color: #FFF4F4;
+}
+
+#feito {
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    padding-left: 10px;
+    background-color: #FFF4F4;
+}
+
+#importante {
+    background-color: yellow;
+    height: 5px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#concluido {
+    background-color: green;
+    height: 5px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#longo_prazo {
+    background-color: purple;
+    height: 5px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#erro {
+    background-color: red;
+    height: 5px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#tre_pontos {
+    font-size: 20px;
+    margin-left: 200px;
+    font-weight: 1000;
+    margin-top: 5px;
+
+}
+
+#add {
+    font-weight: 1000;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 190px;
+}
+
+#tre_prenche {
+    font-size: 20px;
+    margin-left: 230px;
+    font-weight: 1000;
+    margin-top: -30px;
+}
+
+.menu {
+    position: absolute;
+    border: 2pxsolid black;
+    display: one;
+}
+
+.menu a {
+    display: block;
+    color: black
+}
+
+.tres_pontos:hover .menu {
+    display: block;
+}
+
+.estados {
+    margin-top: -20 px;
+    width: 200px;
+    background-color: #FFF4F4;
+}
+
+.estados button {
+    border: none;
+}
